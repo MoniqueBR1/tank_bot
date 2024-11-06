@@ -31,20 +31,12 @@ public class Drivetrain extends SubsystemBase {
       leftVelocity = 0;
     }
 
-    setRightMotors(rightVelocity);
-    setLeftMotors(leftVelocity);
-  }
-
-  public void setRightMotors(double velocity) {
-    frontRight.set(velocity);
-    middleRight.set(velocity);
-    backRight.set(velocity);
-  }
-
-  public void setLeftMotors(double velocity) {
-    frontLeft.set(velocity);
-    middleLeft.set(velocity);
-    backLeft.set(velocity);
+    frontRight.set(rightVelocity);
+    middleRight.set(rightVelocity);
+    backRight.set(rightVelocity);
+    frontLeft.set(leftVelocity);
+    middleLeft.set(leftVelocity);
+    backLeft.set(leftVelocity);
   }
 
 }
