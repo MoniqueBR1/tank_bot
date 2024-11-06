@@ -24,10 +24,12 @@ public class Drivetrain extends SubsystemBase {
   }
 
   public void setMotors(double rightVelocity, double leftVelocity){
-    if (rightVelocity <= 0.15){
+    double stickDriftThreshold = 0.15;
+    
+    if (rightVelocity <= stickDriftThreshold){
       rightVelocity = 0;
     }
-    if (leftVelocity < 0.15){
+    if (leftVelocity < stickDriftThreshold){
       leftVelocity = 0;
     }
 
