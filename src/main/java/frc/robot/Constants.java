@@ -18,13 +18,11 @@ public final class Constants {
   }
 
   public static class DriveTrainConstants{
-    public static final int frontLeft = (Integer) null;
-    public static final int frontRight = (Integer) null;
-    public static final int middleLeft = (Integer) null;
-    public static final int middleRight = (Integer) null;
-    public static final int backLeft = (Integer) null;
-    public static final int backRight = (Integer) null;
-
-
+    public static final int frontLeft = (Integer) 1;
+    public static final int frontRight = (Integer) 2;
+    public static final int middleLeft = (Integer) 3;
+    public static final int middleRight = (Integer) 4;
+    public static final int backLeft = (Integer) 5;
+    public static final int backRight = (Integer) 6;
   }
 }
